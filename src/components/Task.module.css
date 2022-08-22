@@ -1,0 +1,73 @@
+.task {
+    background: var(--gray-500);
+    color: var(--gray-100);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 1rem;
+
+    margin-bottom: 0.75rem;
+}
+
+.taskContent {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 1rem;
+}
+
+.taskContent > input[type="checkbox"]{
+    -webkit-appearance: none;
+	background: transparent;
+	border: 1px solid var(--blue-500);
+	padding: 0.65rem;
+	border-radius: 999px;
+    position: relative;
+
+    transition: border 0.2s;
+}
+
+.taskContent > input[type="checkbox"]:hover{
+    cursor: pointer;
+    border: 1px solid var(--blue-300);
+}
+
+.taskContent > input[type="checkbox"]:checked {
+    background: var(--purple-500);
+	border: 1px solid var(--purple-500);
+	padding: 0.65rem;
+	border-radius: 999px;
+}
+
+
+.taskContent > input[type="checkbox"]:checked:after {
+	content: '\2713';
+	font-size: 0.8rem;
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	color: var(--white);
+}
+
+.task > .trash {
+    color: var(--gray-300);
+
+    transition: color 0.1s;
+}
+
+.task > .trash:hover{
+    cursor: pointer;
+    color: var(--red-100);
+}
+
+.isCheck {
+    color: var(--gray-300);
+}
+
+.isCheck p {
+    text-decoration: line-through;
+}

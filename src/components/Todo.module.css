@@ -1,0 +1,46 @@
+.input {
+    display: grid;
+    grid-template-columns: 638px 1fr;
+    max-width: 736px;
+    height: 3.375rem;
+
+    margin: 0 auto;
+    gap: 0.5rem;
+
+    margin-top: -1.5rem;
+}
+
+.input input[type="text"]{
+    background: var(--gray-500);
+    color: var(--gray-300);
+
+    padding: 1rem;
+    border-radius: 8px;
+    
+    border: 1px solid var(--gray-700);
+
+    outline: none;
+}
+
+.input button[type="submit"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue-500);
+    color: var(--gray-100);
+
+    padding: 1rem;
+    border-radius: 8px;
+    gap: 0.25rem;
+    
+    border: 0;
+
+    transition: background 0.1s;
+}
+
+.input button[type="submit"]:hover{
+    background: var(--blue-300);
+    cursor: pointer;
+}
+
